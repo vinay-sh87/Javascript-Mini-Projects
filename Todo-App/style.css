@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.app-name {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.input-section {
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.input-section input {
+    padding: 8px 150px;
+    background-color: #F5F5F5;
+    border: 1px solid #6C63FF;
+    border-radius: 5px;
+    outline: none;
+    color: #6C63FF;
+}
+
+.input-section input:hover {
+    box-shadow: -2px -2px 5px rgba(143, 137, 255, 8);
+}
+
+.input-section input::placeholder {
+    letter-spacing: 0.5px;
+    color: #8f89ff;
+}
+
+.input-section button {
+    display: block;
+    padding: 8px 30px;
+    letter-spacing: 0.5px;
+    border: 1px solid #6C63FF;
+    background-color: #6C63FF;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.1s;
+}
+
+.input-section button:hover {
+    box-shadow: 2px 2px 5px rgba(143, 137, 255, 0.8);
+}
+
+.list-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.list-section ul li {
+    list-style-type: "✅";
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.list-section ul li .deleteBtn {
+    padding: 8px 35px;
+    margin-left: 1rem;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff1493;
+    border: none;
+    letter-spacing: 0.5px;
+    transition: 0.1s;
+
+}
+
+.deleteBtn:hover {
+    box-shadow: 2px 2px 4px rgba(255, 20, 147, 0.6);
+}
+
+.completed {
+    text-decoration: line-through;
+}
