@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#main {
+    width: 60%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#main p {
+    text-align: justify;
+    letter-spacing: 0.5px;
+    padding-bottom: 1.5rem;
+}
+
+#main p span {
+    font-weight: bold;
+}
+
+#ui-board {
+    padding-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+}
+
+.row .cell {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.cell:active {
+    outline: none;
+}
+
+#b1 {
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#b2 {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#b3 {
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#b4 {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#b5 {
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+#b6 {
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+#b7 {
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#b8 {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+#b9 {
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+#rst {
+    padding: 10px 18px;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    border: none;
+}
+
+#result {
+    font-size: 1.2rem;
+    color: crimson;
+    margin-top: 1rem;
+    font-weight: bold;
+}
