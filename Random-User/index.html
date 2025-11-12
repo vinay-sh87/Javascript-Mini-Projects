@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .main-container {
+        max-width: 800px;
+        width: 90%;
+        margin: 4rem auto;
+        padding: 2rem;
+        box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.7);
+      }
+      .main-container h1 {
+        text-align: center;
+      }
+
+      #refreshBtn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 0.6rem 1.5rem;
+        border-radius: 5px;
+        border: none;
+        background-color: black;
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        font-size: 1rem;
+      }
+
+      .container {
+        display: flex;
+        max-width: 600px;
+        margin: 1rem auto;
+        border: 1px solid black;
+        background-color: black;
+        color: #fff;
+        box-shadow: 5px 10px 10px -5px rgba(0, 0, 0, 0.7);
+      }
+      .image {
+        flex: 1;
+        padding: 1rem;
+      }
+      .image img {
+        width: 100%;
+        border-radius: 1rem;
+        border: 5px outset white;
+      }
+      .info {
+        flex: 3;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .name {
+        color: crimson;
+      }
+      @media screen and (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .image {
+          padding: 3rem 3rem 0 3rem;
+        }
+        .info {
+          padding: 1rem 3rem;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Random User Generator</h1>
+      <button id="refreshBtn">Refresh</button>
+      <div class="container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
