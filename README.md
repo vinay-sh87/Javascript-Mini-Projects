@@ -11,3 +11,7 @@ github profile info using github api: [preview](https://profile-search-appgt.net
 ### 3. Random User Generator 
 
 random user generator using randomuser.me api: [preview](https://generate-user44.netlify.app/)
+
+## 4. Weather App
+
+weather app using openweathermap api to get weather information: [preview](https://weather-appinfo1.netlify.app/)  
